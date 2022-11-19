@@ -1,0 +1,42 @@
+.about-container{
+    width: 85vw;
+    min-height: 80vh;
+    padding: 50px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 3rem; */
+    /* margin-bottom: 3rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.background-container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 2rem;
+    
+}
+.doc-navbar{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 85vw !important;
+}
+.languages-img{
+    width: 100%;
+    /* height: 60%; */
+    object-position: center;
+    object-fit: contain;
+}
+
+

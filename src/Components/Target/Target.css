@@ -1,0 +1,76 @@
+.output-area{
+    height: 30vh;
+    width: 50vw;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+}
+.response-container{
+    width: 80%;
+    height: 50%;
+    margin-right: 0.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.response-container h1{
+    font-size: 24px;
+    flex-wrap: wrap;
+    padding: 25px;
+    margin: auto;
+
+    
+}
+.q-container{
+    width: 70%;
+    height: 20%;
+    padding: 10px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.save-btn, .saved-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border-radius: 50%;
+    border: none;
+    right: 0;
+    top: 0;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-size: 28px;
+    font-weight: 800;
+    color: lightgray;
+    cursor: pointer;
+
+}
+.saved-btn{
+    color: blueviolet;
+}
+.play-btn{
+    position: absolute;
+    right: 0;
+    margin-right: 2.5rem;
+}
+.loading{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25%;
+}
+
+@media screen and (max-width: 800px){
+    .output-area{
+        width: 80vw;
+    }
+}

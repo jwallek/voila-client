@@ -1,0 +1,23 @@
+.play-btn{
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    transition: ease-in-out 0.3s;
+    border: none;
+}
+.play-icon{
+     margin-left: 0.25rem;
+     margin-bottom: 0.25rem;
+     width: 20px;
+     height: 20px;
+     color:rgb(139, 180, 255);
+     transition: 0.3s ease-in-out;
+}
+.play-icon:hover{
+    color:  darkviolet;
+}

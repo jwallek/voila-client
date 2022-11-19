@@ -1,0 +1,38 @@
+.btn-sign-in, .register-submit{
+    background-color: orange!important;
+    color: white !important;
+    box-shadow: 3px 3px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out all;
+}
+.btn-sign-in:hover, .register-submit:hover{
+    background-color: darkorange!important;
+    color: white !important;
+}
+.register-btn, .return-btn{
+    background-color:rgb(139, 180, 255);
+    box-shadow: 3px 3px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out all;
+    color: white;
+   
+}
+.register-btn:hover, .return-btn:hover{
+    background-color: rgb(89, 147, 253)!important;
+    color: white !important;
+}
+
+.btn-container{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.firstLastName{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
