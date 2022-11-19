@@ -6,15 +6,15 @@ function Translate(props) {
 let result
 
 async function translate(data){
-    // await axios.request(data).then(function (response) {
-    //     result = response.data.data.translations.translatedText
-    //     console.log("Sent")
-    //     if(result.length > 0) props.sendResult(result)
-    //      else <h3>Loading...</h3>
+    await axios.request(data).then(function (response) {
+        result = response.data.data.translations.translatedText
+        console.log("Sent")
+        if(result.length > 0) props.sendResult(result)
+         else <h3>Loading...</h3>
         
-    // }).catch(function (error) {
-    //     console.error(error);
-    // });
+    }).catch(function (error) {
+        console.error(error);
+    });
 }
 
 useEffect(() => {

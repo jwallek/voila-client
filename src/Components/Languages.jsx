@@ -15,16 +15,16 @@ const options = {
     }
   };
   
-//    useEffect(() => {
-//       axios.request(options).then(function (response) {
-//         let data = response.data.languages.filter(language => language.language.length === 2)
-//         setLanguageList(data);
-//         console.log('Request Sent')
+   useEffect(() => {
+      axios.request(options).then(function (response) {
+        let data = response.data.languages.filter(language => language.language.length === 2)
+        setLanguageList(data);
+        console.log('Request Sent')
 
-//     }).catch(function (error) {
-//     console.error(error);
-//  });
-//   }, [])
+    }).catch(function (error) {
+    console.error(error);
+ });
+  }, [])
 
  
 
