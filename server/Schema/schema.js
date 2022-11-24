@@ -1,5 +1,8 @@
 const SavedWord = require('../models/SavedWords')
 const User = require('../models/Users')
+const Cors = require('micro-cors')
+const { ApolloServer } = require('apollo-server-micro')
+
 
 const {
     GraphQLObjectType,
@@ -11,6 +14,7 @@ const {
 } = require('graphql')
 
 //Saved Word Type
+
 
 const SavedWordType = new GraphQLObjectType({
     name: 'SavedWord',
@@ -132,4 +136,10 @@ const mutation = new GraphQLObjectType({
 module.exports = new GraphQLSchema({
     query: RootQuery,
     mutation
+})
+
+const serversStart = ApolloServer.start()
+export default Cors(async(req,res)=> {
+    await serversStart
+    await ApolloServer.createHandler({ path: '/graphql' })(req, res)
 })
