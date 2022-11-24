@@ -16,7 +16,8 @@
     "express-graphql": "^0.12.0",
     "graphql": "^16.6.0",
     "micro-cors": "^0.1.1",
-    "mongoose": "^6.6.2"
+    "mongoose": "^6.6.2",
+    "sofa-api": "^0.15.0"
   },
   "devDependencies": {
     "dotenv": "^16.0.2",

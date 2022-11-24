@@ -1,7 +1,6 @@
 const SavedWord = require('../models/SavedWords')
 const User = require('../models/Users')
-const Cors = require('micro-cors')
-const { ApolloServer } = require('apollo-server-micro')
+
 
 
 const {
@@ -138,8 +137,3 @@ module.exports = new GraphQLSchema({
     mutation
 })
 
-const serversStart = ApolloServer.start()
-export default Cors(async(req,res)=> {
-    await serversStart
-    await ApolloServer.createHandler({ path: '/graphql' })(req, res)
-})

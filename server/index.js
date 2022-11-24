@@ -5,6 +5,7 @@ const { graphqlHTTP } = require("express-graphql");
 const connectDB = require("./config/db");
 const schema = require("./Schema/schema");
 const path = require("path");
+const { useSofa } = require('sofa-api')
 
 const port = process.env.PORT || 5000;
 
@@ -12,11 +13,14 @@ const app = express();
 connectDB();
 
 app.use(cors());
+app.use('/api',
+useSofa({
+  schema
+}))
 app.use(
   "/graphql",
   graphqlHTTP({
     schema,
-    graphiql: true
   })
 );
 
