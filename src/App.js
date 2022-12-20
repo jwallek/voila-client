@@ -35,7 +35,7 @@ const cache = new InMemoryCache({
 })
 
 const client = new ApolloClient({
-  uri: '/graphql',
+  uri: 'https://voila-server.onrender.com/graphql',
   cache
 })
 
