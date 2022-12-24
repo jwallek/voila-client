@@ -44,7 +44,7 @@ function Modal(props) {
     }
     },[loading, error, data])
 
-    if(loading) return <Spinner animation="border" role="status" className="loading"><span className="visually-hidden">Loading...</span></Spinner>
+    // if(loading) return <Spinner animation="border" role="status" className="loading"><span className="visually-hidden">Loading...</span></Spinner>
     if(error) return <p>Something went wrong...</p>
     
 
